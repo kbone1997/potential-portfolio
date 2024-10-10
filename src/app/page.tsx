@@ -1,9 +1,21 @@
-import Image from "next/image";
 
-export default function Home() {
+import Home from "./content/home";
+import Contact from "./content/contact";
+import Projects from "./content/projects";
+import Services from "./content/services";
+import Testimonials from "./content/testimonials";
+import About from "./content/about";
+
+
+export default function Landing() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h2>This is the home page</h2>
+    <div className="">
+      <Home />
+      <About />
+      <Services />
+      <Projects />
+      <Testimonials />
+      <Contact />
     </div>
   );
 }

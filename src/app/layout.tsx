@@ -2,14 +2,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "./navBar";
-import { Poppins } from 'next/font/google';
 import { useEffect, useState } from 'react';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  variable: '--font-poppins',
-  weight: ['400', '500', '600', '700'], // Add the font weights you want to use
-});
 
 export default function RootLayout({
   children,
@@ -36,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={theme === 'dark' ? 'dark' : ''}>
       <body
-        className={` ${poppins.variable} antialiased`}
+        className="font-poppins font-normal bg-white dark:bg-darkBg"
       >
         <NavBar toggleTheme={toggleTheme} />
         {children}
