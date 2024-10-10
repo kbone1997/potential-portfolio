@@ -17,6 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
+  //check
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   // Use effect to apply theme from local storage or default
