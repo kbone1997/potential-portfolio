@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={theme === 'dark' ? 'dark' : ''}>
       <body
-        className="font-poppins font-normal bg-white dark:bg-darkBg"
+        className="font-poppins bg-white dark:bg-darkBg"
       >
         <NavBar toggleTheme={toggleTheme} />
         {children}

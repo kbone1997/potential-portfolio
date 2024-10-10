@@ -7,8 +7,8 @@ import logo from "./assets/logo.svg"
 
 function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
     return (
-        <nav className=" p-4 mt-10">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className=" p-4 mt-10 border-4">
+            <div className="container mx-[8%] flex justify-between items-center">
                 <div className="w-1/5">
                     <Image
                         className="dark:text-white"
