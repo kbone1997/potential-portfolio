@@ -1,5 +1,4 @@
 import React from 'react';
-import image from "../../assets/466e1911ebe5383b65f5e9a7095f7e2c.png";
 import Image, { StaticImageData } from 'next/image';
 
 interface ProjectComponentsProps {
