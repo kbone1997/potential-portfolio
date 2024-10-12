@@ -9,7 +9,7 @@ import About from "./content/about";
 
 export default function Landing() {
   return (
-    <div className="font-poppins">
+    <div>
       <Home />
       <About />
       <Services />

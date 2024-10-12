@@ -1,8 +1,16 @@
 "use client"
 import type { Metadata } from "next";
 import "./globals.css";
+import { Poppins } from '@next/font/google';
 import NavBar from "./navBar";
 import { useEffect, useState } from 'react';
+
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700'], // Define the weights you need
+  style: ["normal"],
+  subsets: ['latin'],  // Specify the character subsets
+});
+
 
 
 export default function RootLayout({
@@ -30,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={theme === 'dark' ? 'dark' : ''}>
       <body
-        className="font-poppins bg-white dark:bg-darkBg"
+        className={`${poppins.className} bg-white dark:bg-darkBg`}
       >
         <NavBar toggleTheme={toggleTheme} />
         {children}

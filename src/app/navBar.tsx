@@ -1,11 +1,18 @@
 // components/NavBar.tsx
-"use client"
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import logo from "./assets/logo.svg"
 
 
 function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
+    const [theme, setTheme] = useState<string | null>(null);
+
+    useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        setTheme(storedTheme);
+    }, [theme, setTheme]);
+
     return (
         <nav className=" p-4 mt-10 border-4">
             <div className="container mx-[8%] flex justify-between items-center">
@@ -24,7 +31,7 @@ function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
                         className=" text-black dark:text-white"
                     >
                         <a className="text-black dark:text-white">
-                            {localStorage.getItem("theme")}
+                            {theme}
                         </a>
                     </li>
                     <li>

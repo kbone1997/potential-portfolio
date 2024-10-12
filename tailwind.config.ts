@@ -12,9 +12,9 @@ const config: Config = {
       colors: {
         primary: "#FD6F00",
         darkBg: "#1E1E1E",
-      },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        offwhite: "#F8F8F8",
+        border: "#545454",
+        skin: "#FFEBDB"
       },
     },
   },
