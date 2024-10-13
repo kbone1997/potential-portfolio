@@ -2,7 +2,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
-import logo from "./assets/logo.svg"
+import logo from "./assets/Subtract.svg"
 
 
 function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
@@ -15,17 +15,17 @@ function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
 
     return (
         <nav className=" p-4 mt-10 border-4">
-            <div className="container mx-[8%] flex justify-between items-center">
-                <div className="w-1/5">
+            <div className="container mx-[8%] flex items-center justify-center">
+                <div className="w-1/4 flex justify-start items-center gap-4">
                     <Image
-                        className="dark:text-white"
                         priority
                         src={logo}
                         alt="Follow us on Twitter"
                     />
+                    <p className="font-montserrat text-[48px] font-[700] text-darkBg dark:text-logotext">M<span className="font-[400] text-[48px]">umair</span></p>
                 </div>
 
-                <ul className="flex w-4/5 justify-between items-center text-xl">
+                <ul className="flex w-3/4 justify-between items-center text-xl">
                     <li
                         onClick={toggleTheme}
                         className=" text-black dark:text-white"
@@ -72,7 +72,6 @@ function NavBar({ toggleTheme }: { toggleTheme: () => void }) {
                             Download CV
                         </button>
                     </li>
-
                 </ul>
             </div>
         </nav>

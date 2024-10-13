@@ -1,11 +1,16 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import TestimonialsComponents from './components/testimonialsComponents';
-import image from "../assets/baa649092172e33f9b1e0e4eb8df495d.png"
+import image1 from "../assets/baa649092172e33f9b1e0e4eb8df495d.png"
+import image2 from "../assets/3fa637cd1c7f4913b84b9f6c8137cb98.png"
 
 function Testimonials() {
     const [isVisible, setIsVisible] = useState<boolean[]>([]); // Manage visibility for each component
     const testimonialRefs = useRef<(HTMLDivElement | null)[]>([]); // Create refs for each testimonial component
+    const scrollContainerRef = useRef<HTMLDivElement>(null); // Ref for the scrollable container
+    const [selectedIndex, setSelectedIndex] = useState<number>(0);
+
+    const images = [image1, image2, image1, image2]; // Array of images
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -42,6 +47,15 @@ function Testimonials() {
         };
     }, []);
 
+    const scrollToComponent = (index: number) => {
+        if (testimonialRefs.current[index] && scrollContainerRef.current) {
+            scrollContainerRef.current.scrollTo({
+                left: testimonialRefs.current[index]!.offsetLeft,
+                behavior: "smooth",
+            });
+        }
+    };
+
     return (
         <div className='flex flex-col h-[1020px] pt-[10%]'>
             <div className='flex flex-col items-center justify-center w-full'>
@@ -53,9 +67,9 @@ function Testimonials() {
             </div>
 
             {/* Scrollable Testimonials Section */}
-            <div className='flex w-full overflow-x-auto pt-24'>
+            <div className='flex w-full overflow-x-auto no-scrollbar no-sc pt-24' ref={scrollContainerRef}>
                 <div className='flex gap-12 justify-start'>
-                    {[...Array(4)].map((_, index) => (
+                    {images.map((img, index) => (
                         <div
                             key={index}
                             ref={(el) => {
@@ -66,10 +80,24 @@ function Testimonials() {
                                 transition: 'opacity 0.3s ease-in-out', // Smooth transition for opacity changes
                             }}
                         >
-                            <TestimonialsComponents image={image} />
+                            <TestimonialsComponents image={img} />
                         </div>
                     ))}
                 </div>
+            </div>
+            {/* Navigation dots */}
+            <div className="flex w-full h-[150px] justify-center items-center gap-2">
+                {images.map((_, index) => (
+                    <div
+                        key={index}
+                        className={`w-[57px] h-[16px] ${index === selectedIndex ? "bg-primary" : "bg-offwhite2"}  rounded-full cursor-pointer`}
+                        onClick={() => {
+                            scrollToComponent(index)
+                            setSelectedIndex(index)
+                        }
+                        }
+                    ></div>
+                ))}
             </div>
         </div>
     );

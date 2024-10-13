@@ -4,6 +4,8 @@ import "./globals.css";
 import { Poppins } from '@next/font/google';
 import NavBar from "./navBar";
 import { useEffect, useState } from 'react';
+import Footer from "./footer";
+import Footer2 from "./footer2";
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700'], // Define the weights you need
@@ -40,8 +42,11 @@ export default function RootLayout({
       <body
         className={`${poppins.className} bg-white dark:bg-darkBg`}
       >
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
         <NavBar toggleTheme={toggleTheme} />
         {children}
+        <Footer />
+        <Footer2 />
       </body>
     </html>
   );
