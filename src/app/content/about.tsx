@@ -1,12 +1,32 @@
+"use client"
 import React from 'react';
+import Image from 'next/image';
+import test from "../assets/Background copy 1.png"
+import test2 from "../assets/Background copy 2.png"
 
 function About() {
   return (
-    <div className='flex border-4 h-[80vh] mx-[12%] pt-[5%]'>
-      <div className='w-5/12 border-4 border-red-400 '>
-
+    <div className='flex h-[80vh] mx-[12%] pt-[5%]'>
+      <div className='w-5/12 flex justify-center items-center'>
+        <div className='absolute w-[374px] h-[83px] bg-mask z-20 mb-[500px]'></div>
+        <Image
+          className='absolute  w-[653px] h-[407px] bottom-[-563px] overflow-visible z-10'
+          src={test2}
+          alt={''}
+          width={681}
+          height={407}
+        />
+        <div className='relative w-[545px] h-[545px] bg-white rounded-full'>
+          <Image
+            className='absolute w-[545px] h-[545px] border-4 rounded-full '
+            src={test}
+            alt={''}
+            width={545}
+            height={545}
+          />
+        </div>
       </div>
-      <div className='w-7/12 border-4 border-red-400 pl-[5%]'>
+      <div className='w-7/12 pl-[5%]'>
         <p className='font-[600] text-6xl'>About Me</p>
         <p className='font-[400] text-[21px] py-6 text-justify tracking-wide'>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
         <div>

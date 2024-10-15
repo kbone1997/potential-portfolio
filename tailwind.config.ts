@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,6 +26,7 @@ const config: Config = {
         placeholder: "#797979",
         logotext: "#FBFBFB",
         darkfooter: "#121212",
+        mask: "#FD6F0099"
       },
     },
   },

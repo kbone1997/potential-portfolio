@@ -6,6 +6,7 @@ import NavBar from "./navBar";
 import { useEffect, useState } from 'react';
 import Footer from "./footer";
 import Footer2 from "./footer2";
+import useThemeStore from "./store";
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700'], // Define the weights you need
@@ -23,6 +24,9 @@ export default function RootLayout({
 
   //check
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const setThemeStore = useThemeStore((state) => state.setDarkMode);
+  const themeStore = useThemeStore((state) => state.darkMode);
+
 
   // Use effect to apply theme from local storage or default
   useEffect(() => {
@@ -33,12 +37,12 @@ export default function RootLayout({
   // Toggle theme between light and dark
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
+    setThemeStore()
     localStorage.setItem('theme', newTheme); // Persist theme
   };
 
   return (
-    <html lang="en" className={theme === 'dark' ? 'dark' : ''}>
+    <html lang="en" className={themeStore ? 'dark' : ''}>
       <body
         className={`${poppins.className} bg-white dark:bg-darkBg`}
       >

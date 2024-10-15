@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ProjectComponents from './components/projectComponents'
 import image1 from "../assets/466e1911ebe5383b65f5e9a7095f7e2c.png"

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ServiceComponent from './components/serviceComponents'
 import ui from "../assets/Group 1.svg"
