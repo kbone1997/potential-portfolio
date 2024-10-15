@@ -39,9 +39,13 @@ function Home() {
                     width={485}
                     height={485}
                 />
-                <div className="relative ml-[161px] mt-[3px] w-[485px] h-[485px] bg-white rounded-full">
+
+                <div className="relative ml-[158px] mt-[3px] w-[485px] h-[485px] rounded-full bg-white">
+                    <div className="absolute inset-0 rounded-full p-[6px] bg-gradient-to-t from-orange-500 to-alphaBlack">
+                        <div className="w-full h-full bg-white rounded-full"></div>
+                    </div>
                     <Image
-                        className="absolute w-[485px] h-[485px] border-4 rounded-full"
+                        className="absolute w-[485px] h-[485px] rounded-full z-0"
                         src={test}
                         alt=""
                         width={488}

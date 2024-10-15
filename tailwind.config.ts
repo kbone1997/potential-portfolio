@@ -27,7 +27,8 @@ const config: Config = {
         logotext: "#FBFBFB",
         darkfooter: "#121212",
         mask: "#FD6F0099",
-        progressCircle: "#EDECEC"
+        progressCircle: "#EDECEC",
+        alphaBlack: "#00000070"
       },
     },
   },

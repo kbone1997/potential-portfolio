@@ -60,7 +60,7 @@ function Testimonials() {
         <div className='flex flex-col h-[1020px] pt-[10%]'>
             <div className='flex flex-col items-center justify-center w-full'>
                 <p className='text-center text-6xl font-semibold tracking-wider text-black dark:text-white'>Testimonials</p>
-                <p className='font-[400] text-[21px] py-12 tracking-wide w-[63%] text-center text-black dark:text-white'>
+                <p className='font-[400] text-[21px] py-12 tracking-wide w-[48%] text-center text-black dark:text-white'>
                     Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
                     Aliquet donec morbi convallis pretium.
                 </p>

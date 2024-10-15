@@ -10,15 +10,18 @@ function About() {
       <div className='w-5/12 flex justify-center items-center'>
         <div className='absolute w-[374px] h-[83px] bg-mask z-20 mb-[500px]'></div>
         <Image
-          className='absolute  w-[653px] h-[407px] bottom-[-563px] overflow-visible z-10'
+          className='absolute  w-[662px] h-[407px] bottom-[-563px] overflow-visible z-10'
           src={test2}
           alt={''}
           width={681}
           height={407}
         />
         <div className='relative w-[545px] h-[545px] bg-white rounded-full'>
+          <div className="absolute inset-0 rounded-full p-[6px] bg-gradient-to-t from-orange-500 to-alphaBlack">
+            <div className="w-full h-full bg-white rounded-full"></div>
+          </div>
           <Image
-            className='absolute w-[545px] h-[545px] border-4 rounded-full '
+            className='absolute w-[545px] h-[545px] rounded-full '
             src={test}
             alt={''}
             width={545}
