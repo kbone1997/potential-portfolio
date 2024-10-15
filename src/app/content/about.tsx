@@ -27,55 +27,67 @@ function About() {
         </div>
       </div>
       <div className='w-7/12 pl-[5%]'>
-        <p className='font-[600] text-6xl'>About Me</p>
-        <p className='font-[400] text-[21px] py-6 text-justify tracking-wide'>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
-        <div>
-          <p className='font-[600] text-[24px] py-2 text-justify tracking-wide'>UX</p>
-          <div className="flex items-center">
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div className="bg-primary h-2.5 rounded-full" style={{ width: '80%' }}></div>
-            </div>
-            <div className="ml-4 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center">
-              80%
+        <p className='font-[600] text-6xl text-black dark:text-white'>About Me</p>
+        <p className='font-[400] text-[21px] py-6 text-justify tracking-wide text-black dark:text-white'>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+
+        <div className='flex flex-col gap-4'>
+          <div>
+            <p className='font-[600] text-[24px] py-2 text-justify tracking-wide text-black dark:text-white'>UX</p>
+            <div className="relative w-full">
+              <div className="w-full bg-gray-200 rounded-full h-[12px]">
+                <div className="bg-primary h-[12px] rounded-full" style={{ width: '93%' }}></div>
+              </div>
+              {/* Circle at the top of the progress bar */}
+              <div
+                className="absolute top-[-11px] left-[calc(93%-5px)] w-[32px] h-[32px] rounded-full border-[3px] border-primary bg-progressCircle flex items-center justify-center"
+                style={{ transform: 'translateX(-50%)' }}
+              >
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Website Design */}
-        <div>
-          <p className='font-[600] text-[24px] py-2 text-justify tracking-wide'>Website Design</p>
-          <div className="flex items-center">
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div className="bg-primary h-2.5 rounded-full" style={{ width: '70%' }}></div>
-            </div>
-            <div className="ml-4 w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center">
-              70%
+          <div>
+            <p className='font-[600] text-[24px] py-2 text-justify tracking-wide text-black dark:text-white'>Website Design</p>
+            <div className="relative w-full">
+              <div className="w-full bg-gray-200 rounded-full h-[12px]">
+                <div className="bg-primary h-[12px] rounded-full" style={{ width: '88%' }}></div>
+              </div>
+              {/* Circle at the top of the progress bar */}
+              <div
+                className="absolute top-[-11px] left-[calc(88%-5px)] w-[32px] h-[32px] rounded-full border-[3px] border-primary bg-progressCircle flex items-center justify-center"
+                style={{ transform: 'translateX(-50%)' }}
+              >
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* App Design */}
-        <div>
-          <p className='font-[600] text-[24px] py-2 text-justify tracking-wide'>App Design</p>
-          <div className="flex items-center">
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div className="bg-primary h-2.5 rounded-full" style={{ width: '85%' }}></div>
-            </div>
-            <div className="ml-4 w-8 h-8 rounded-full bg-yellow-500 text-white flex items-center justify-center">
-              85%
+          <div>
+            <p className='font-[600] text-[24px] py-2 text-justify tracking-wide text-black dark:text-white'>App Design</p>
+            <div className="relative w-full">
+              <div className="w-full bg-gray-200 rounded-full h-[12px]">
+                <div className="bg-primary h-[12px] rounded-full" style={{ width: '95%' }}></div>
+              </div>
+              {/* Circle at the top of the progress bar */}
+              <div
+                className="absolute top-[-11px] left-[calc(95%-5px)] w-[32px] h-[32px] rounded-full border-[3px] border-primary bg-progressCircle flex items-center justify-center"
+                style={{ transform: 'translateX(-50%)' }}
+              >
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Graphic Design */}
-        <div>
-          <p className='font-[600] text-[24px] py-2 text-justify tracking-wide'>Graphic Design</p>
-          <div className="flex items-center">
-            <div className="w-full bg-gray-200 rounded-full h-2.5">
-              <div className="bg-primary h-2.5 rounded-full" style={{ width: '90%' }}></div>
-            </div>
-            <div className="ml-4 w-8 h-8 rounded-full bg-red-500 text-white flex items-center justify-center">
-              90%
+          <div>
+            <p className='font-[600] text-[24px] py-2 text-justify tracking-wide text-black dark:text-white'>Graphic Design</p>
+            <div className="relative w-full">
+              <div className="w-full bg-gray-200 rounded-full h-[12px]">
+                <div className="bg-primary h-[12px] rounded-full" style={{ width: '92%' }}></div>
+              </div>
+              {/* Circle at the top of the progress bar */}
+              <div
+                className="absolute top-[-11px] left-[calc(92%-5px)] w-[32px] h-[32px] rounded-full border-[3px] border-primary bg-progressCircle flex items-center justify-center"
+                style={{ transform: 'translateX(-50%)' }}
+              >
+              </div>
             </div>
           </div>
         </div>

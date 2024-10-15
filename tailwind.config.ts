@@ -26,7 +26,8 @@ const config: Config = {
         placeholder: "#797979",
         logotext: "#FBFBFB",
         darkfooter: "#121212",
-        mask: "#FD6F0099"
+        mask: "#FD6F0099",
+        progressCircle: "#EDECEC"
       },
     },
   },

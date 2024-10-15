@@ -9,23 +9,23 @@ function Projects() {
     return (
         <div className='flex flex-col h-[1020px] mx-[12%] pt-[5%]'>
             <div className='flex flex-col items-center justify-center w-full'>
-                <p className='text-center text-6xl font-semibold tracking-wider'>My Projects</p>
-                <p className='font-[400] text-[21px] py-12 tracking-wide w-2/3 text-center'>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus</p>
+                <p className='text-center text-6xl font-semibold tracking-wider text-black dark:text-white'>My Projects</p>
+                <p className='font-[400] text-[21px] py-12 tracking-wide w-2/3 text-center text-black dark:text-white'>Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus. Phasellus consequat urna tellus</p>
             </div>
             <div className='flex flex-row w-full justify-center gap-4'>
-                <div className='bg-offwhite hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
+                <div className='bg-offwhite cursor-pointer hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
                     All
                 </div>
-                <div className='bg-offwhite hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
+                <div className='bg-offwhite cursor-pointer hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
                     UI/UX
                 </div>
-                <div className='bg-offwhite hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
+                <div className='bg-offwhite cursor-pointer hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
                     Web Design
                 </div>
-                <div className='bg-offwhite hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
+                <div className='bg-offwhite cursor-pointer hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
                     App Design
                 </div>
-                <div className='bg-offwhite hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
+                <div className='bg-offwhite cursor-pointer hover:bg-primary hover:text-white text-black text-[24px] font-[400] px-[20px] py-[10px] border-border border-[0.4px] rounded-[12px]'>
                     Graphic Design
                 </div>
             </div>
@@ -37,15 +37,15 @@ function Projects() {
             <div className='flex w-full gap-8'>
                 <div className='flex flex-col w-1/3 mt-10 gap-4'>
                     <p className='text-primary text-[19px] font-normal tracking-wide'>Web Design</p>
-                    <p className='font-[700] text-[24px]'>AirCalling Landing Page Design</p>
+                    <p className='font-[700] text-[24px] text-black dark:text-white'>AirCalling Landing Page Design</p>
                 </div>
                 <div className='flex flex-col w-1/3 mt-10 gap-4'>
                     <p className='text-primary text-[19px] font-normal tracking-wide'>Web Design</p>
-                    <p className='font-[700] text-[24px]'>Business Landing Page Design</p>
+                    <p className='font-[700] text-[24px] text-black dark:text-white'>Business Landing Page Design</p>
                 </div>
                 <div className='flex flex-col w-1/3 mt-10 gap-4'>
                     <p className='text-primary text-[19px] font-normal tracking-wide'>Web Design</p>
-                    <p className='font-[700] text-[24px]'>Ecom Web Page Design</p>
+                    <p className='font-[700] text-[24px] text-black dark:text-white'>Ecom Web Page Design</p>
                 </div>
             </div>
         </div>
