@@ -15,7 +15,7 @@ function Testimonials() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
-                const updatedVisibility = entries.map((entry) => entry.isIntersecting);
+                //const updatedVisibility = entries.map((entry) => entry.isIntersecting);
                 // Update visibility state for each testimonial
                 setIsVisible((prevState) => {
                     const newVisibility = [...prevState];

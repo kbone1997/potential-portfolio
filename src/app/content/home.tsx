@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import test from "../assets/Layer 0 copy 3.png";
 import test2 from "../assets/Layer 0 copy 4.png";
